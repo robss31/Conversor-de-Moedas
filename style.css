@@ -8,6 +8,12 @@
 body{
    background-color: #006e90;
    color: #ffffff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+
 }
 
 .logo{
@@ -17,9 +23,10 @@ body{
     opacity: 0.7;
 } 
 
+
 h1{
-    margin-top: -30px;
-    margin-bottom: 20px;
+    margin-top: -10px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -27,25 +34,25 @@ h1{
 .container{ 
     width: 375px;
     height: 700px;
-    border-radius: 20px;
-    margin: 0 auto;
-    padding-top: 40px;
-    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;    
     background:#41bbd9;
     border: 1px solid #f18f01;
+    margin-bottom: 20px;
 }
 
 
 .moeda-escolhida{
-    width: 327px;
-    margin-left: 24px;
-    
+    width: 327px;   
 
     select{
+        display: flex;
         width: 327px;
         height: 48px;
         margin-bottom: 20px;
-        margin-left: 24px;
         border-radius: 4px;
         border:  1px solid #750f0f;
         padding-left: 8px;
@@ -57,23 +64,19 @@ h1{
 
 .valor{
     width: 327px;
-    margin-top:-21px;
-    margin-left: 24px;
- 
     
+       
     input{
         width: 327px;
-        height: 48px;
-        padding-left: 8px;   
+        height: 48px;   
+        padding-left: 8px;
         margin-bottom: 20px;
-        margin-left: 24px;
         border-radius: 4px;
         border:  1px solid #BBBBBB;
         font-size: 16px;
         font-weight: 700;
-        color: #111111;
-       
-               
+        color: #111111; 
+        cursor: pointer;             
     }   
 }
 
@@ -81,13 +84,12 @@ h1{
     font-size: 14px;
     font-weight: 700;
     color: #111111;
-   
+    margin-left: 30px;   
 }
 
 .but-converte{
     width: 327px;
     height: 48px;
-    margin-left: 24px;
     border-radius: 20px;
     background-color:#006e90;
     border: none;
@@ -123,8 +125,7 @@ section{
 p{
     text-align: center;
     font-size: 14px;
-    color: #160606 ;
-    
+    color: #160606 ;    
 }
 
 .seta, .imagem-atual{
@@ -141,4 +142,39 @@ p{
 
 .euro{
     display: none;
+}
+
+@media  (min-width: 440px) and (max-width: 800px) {    
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    h1{
+        font-size: 22px;       
+    }
+
+    .logo {
+        width: 80%;
+        margin-top:380px;
+        margin-left:-40px;
+        position: absolute;
+        opacity: 0.1;
+    }
+
+    
+   .container{
+       display: flex;
+       flex-direction: column;
+       margin-left:-40px;
+       margin-top: 20px;
+       width: 80%;
+       position:static;
+       
+   }
+
+
 }
