@@ -159,14 +159,14 @@ p {
     flex-direction: column;
     margin-top: 20px;
     margin-left: -40px;
-    width: 80%;
+    width: 90%;
     position: static;
     align-items: center;
   }
 
   section,
   .but-converte {
-    width:85%;
+    width:90%;
   }
 
   .valor{
@@ -181,7 +181,7 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 70%;
+      width: 90%;
       height: 48px;
       padding-left: 8px;
       margin-bottom: 20px;
@@ -206,7 +206,7 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 70%;
+      width: 90%;
       height: 48px;
       margin-bottom: 20px;
       border-radius: 4px;
