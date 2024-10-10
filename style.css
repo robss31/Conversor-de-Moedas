@@ -158,7 +158,6 @@ p {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    margin-left: -20px;
     width: 90%;
     position: static;
     align-items: center;
