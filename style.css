@@ -140,7 +140,7 @@ p {
   display: none;
 }
 
-@media (min-width: 350px) and (max-width: 600px) {
+@media (min-width: 330px) and (max-width: 600px) {
   
   h1 {
     font-size: 22px;
