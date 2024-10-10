@@ -1,180 +1,220 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
-    font-family: "Roboto", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-body{
-   background-color: #006e90;
-   color: #ffffff;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   
-
+body {
+  background-color: #006e90;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo{
-    display: block;
-    width: 250px;
-    margin: 20px auto;
-    opacity: 0.7;
-} 
+.logo {
+  display: block;
+  width: 250px;
+  margin: 20px auto;
+  opacity: 0.7;
+}
 
-
-h1{
-    margin-top: -10px;
-    margin-bottom: 10px;
-    text-align: center;
+h1 {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 /*caixa principal azul clara*/
-.container{ 
-    width: 375px;
-    height: 700px;
+.container {
+  width: 375px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: #41bbd9;
+  border: 1px solid #f18f01;
+  margin-bottom: 20px;
+}
+
+.moeda-escolhida {
+  width: 327px;
+
+  select {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;    
-    background:#41bbd9;
-    border: 1px solid #f18f01;
-    margin-bottom: 20px;
-}
-
-
-.moeda-escolhida{
-    width: 327px;   
-
-    select{
-        display: flex;
-        width: 327px;
-        height: 48px;
-        margin-bottom: 20px;
-        border-radius: 4px;
-        border:  1px solid #750f0f;
-        padding-left: 8px;
-        font-size: 14px;
-        font-weight: 700;  
-        cursor: pointer;
-    }
-}
-
-.valor{
-    width: 327px;
-    
-       
-    input{
-        width: 327px;
-        height: 48px;   
-        padding-left: 8px;
-        margin-bottom: 20px;
-        border-radius: 4px;
-        border:  1px solid #BBBBBB;
-        font-size: 16px;
-        font-weight: 700;
-        color: #111111; 
-        cursor: pointer;             
-    }   
-}
-
-::placeholder{
-    font-size: 14px;
-    font-weight: 700;
-    color: #111111;
-    margin-left: 30px;   
-}
-
-.but-converte{
     width: 327px;
     height: 48px;
-    border-radius: 20px;
-    background-color:#006e90;
-    border: none;
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: 700;
     margin-bottom: 20px;
-    cursor: pointer;
-    border: 1px solid #f18f01;
-}
-
-section{
-    width: 327px;
-    height: 280px;
-    border-radius: 20px;
-    border: 1px solid #f18f01;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 28px;  
-    background-color:#006e90 ;
-}
-
-.brasil{
-    display: block;
-    width: 44;
-    height: 44px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: -10px;    
-}
-
-p{
-    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #750f0f;
+    padding-left: 8px;
     font-size: 14px;
-    color: #160606 ;    
+    font-weight: 700;
+    cursor: pointer;
+  }
 }
 
-.seta, .imagem-atual{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 13px;
+.valor {
+  width: 327px;
+
+  input {
+    width: 327px;
+    height: 48px;
+    padding-left: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #bbbbbb;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111111;
+    cursor: pointer;
+  }
 }
 
-.imagem-atual{
-    width: 44px;
-    margin-bottom: -8px;
+::placeholder {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111111;
+  margin-left: 30px;
 }
 
-.euro{
-    display: none;
+.but-converte {
+  width: 327px;
+  height: 48px;
+  border-radius: 20px;
+  background-color: #006e90;
+  border: none;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid #f18f01;
 }
 
-@media  (min-width: 400px) and (max-width: 800px) {    
+section {
+  width: 327px;
+  height: 280px;
+  border-radius: 20px;
+  border: 1px solid #f18f01;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 28px;
+  background-color: #006e90;
+}
 
-    body{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }    
+.brasil {
+  display: block;
+  width: 44;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
 
-    h1{
-        font-size: 22px;       
-    }
+p {
+  text-align: center;
+  font-size: 14px;
+  color: #160606;
+}
 
-    .logo {
-        width: 80%;
-        margin-top:380px;
-        margin-left:-40px;
-        position: absolute;
-        opacity: 0.1;
-    }
+.seta,
+.imagem-atual {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13px;
+}
 
+.imagem-atual {
+  width: 44px;
+  margin-bottom: -8px;
+}
+
+.euro {
+  display: none;
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+  
+  h1 {
+    font-size: 22px;
+  }
+
+  .logo {
+    width: 110%;
+    margin-top: 380px;
+    position: absolute;
+    opacity: 0.1;
+    margin-left: -40px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: -40px;
+    width: 80%;
+    position: static;
+    align-items: center;
+  }
+
+  section,
+  .but-converte {
+    width:85%;
+  }
+
+  .valor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 327px;
     
-   .container{
-       display: flex;
-       flex-direction: column;
-       margin-left:-40px;
-       margin-top: 20px;
-       width: 80%;
-       position:static;
-       
-   }
 
+    input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      height: 48px;
+      padding-left: 8px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 1px solid #bbbbbb;
+      font-size: 16px;
+      font-weight: 700;
+      color: #111111;
+      cursor: pointer;
+    }
+  }
 
+  .moeda-escolhida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 327px;
+    height: 80;
+
+    select {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      height: 48px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 1px solid #750f0f;
+      padding-left: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
 }
