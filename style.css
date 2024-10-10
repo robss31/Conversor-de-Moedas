@@ -161,6 +161,7 @@ p {
     width: 90%;
     position: static;
     align-items: center;
+    justify-content: center;
    
   }
 
